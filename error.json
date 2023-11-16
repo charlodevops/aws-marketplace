@@ -78,3 +78,46 @@ TEST SCRIPT
     }
   ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "Records": [
+    {
+      "EventSource": "aws:sns",
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:region:account-id:topic-name:subscription-id",
+      "Sns": {
+        "Type": "Notification",
+        "MessageId": "message-id",
+        "TopicArn": "arn:aws:sns:region:account-id:topic-name",
+        "Subject": "AWS Marketplace Entitlement Notification",
+        "Message": "{\"customerId\": \"customer-id\", \"productId\": \"product-id\", \"status\": \"subscribed\"}",
+        "Timestamp": "timestamp",
+        "SignatureVersion": "1",
+        "Signature": "signature",
+        "SigningCertUrl": "signing-cert-url",
+        "UnsubscribeUrl": "unsubscribe-url",
+        "MessageAttributes": {
+          "key1": {
+            "Type": "String",
+            "Value": "value1"
+          },
+          "key2": {
+            "Type": "String",
+            "Value": "value2"
+          }
+        }
+      }
+    }
+  ]
+}
